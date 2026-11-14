@@ -10,6 +10,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-bosque: #183D32;
+  --color-oliva: #315C49;
+  --color-marfil: #F3EFDF;
+  --color-papel: #fcf7e2;
+  --color-divisor: #66816A;
 }
 
 @media (prefers-color-scheme: dark) {

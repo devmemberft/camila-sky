@@ -1,22 +1,30 @@
 'use client';
 import { motion } from "motion/react";
+import BiologicalRecord from "./BiologicalRecord";
 
 export default function Cover() {
     return(
-        <main className="min-h-screen bg-[#fbf2d1] text-black">
+        <main className="min-h-screen bg-papel text-black">
             <section className="relative mx-auto flex min-h-screen max-w-7xl flex-col overflow-hidden px-6 py-7 sm:px-10 lg:px-16">
-                <header className="flex items-center justify-between border-b border-[#183D32]/20 pb-5">
+                <header className="flex items-center justify-between border-b border-bosque/20 pb-5">
                     <span className="font-mono text-[10px] tracking-[0.2em] sm:text-xs">ARCHIVO DE HISTORIA NATURAL</span>
                     <span className="font-mono tracking-widest text-[10px]">VOL. XXIII</span>
                 </header>
 
                 <div className="grid flex-1 items-center gap-8 py-12 lg:grid-cols-2 lg:gap-10">
-                    <motion.div>
+                    <motion.div
+                        initial={{ opacity:0, y:20 }}
+                        animate={{ opacity:1, y:0 }}
+                        transition={{ duration:0.8 }}
+                        whileInView={{ opacity:1 }}
+                        layout
+                        // cambiar el orden en que se muestra la ilustracion: className="order-2 lg:order-1"
+                    >
                         <p className="mb-5 font-mono text-xs tracking-[02.em] text-[#66916A]">EXPEDIENTE N. °023</p>
 
                         <h1 className="max-w-xl font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05]">Una especie <span className="black italic">extraordinaria.</span></h1>
 
-                        <div className="my-7 h-px w-16 bg-[#66816A]"/>
+                        <div className="my-7 h-px w-16 bg-divisor"/>
 
                         <p className="max-w-md text-sm leading-7 sm:text-base text-[#52675A]">
                             En algún lugar de este vasto mundo existen
@@ -28,22 +36,27 @@ export default function Cover() {
 
                         <p className="mt-5 font-serif text-lg italic">Tu eres un ejemplar excepcional.</p>
 
-                        <button className="mt-9 border px-6 py-4 font-mono transition-colors duration-300 text-[10px] tracking-widest border-[#183D32] hover:bg-[#183D32] hover:text-[#F3EFDF]">EXPLORAR EXPEDIENTE ↓</button>
+                        <button className="mt-9 border px-6 py-4 font-mono transition-colors duration-300 text-[10px] tracking-widest border-bosque hover:bg-bosque hover:text-marfil">EXPLORAR EXPEDIENTE ↓</button>
                     </motion.div>
 
 
-                    <motion.div>
-                        <div className="relative flex w-full items-center justify-center border p-5 aspect-4/5 max-w-85 border-[#183D32]/20 sm:max-w-105">
-                            <div className="absolute left-3 top-3 font-mono tracking-widest text-[9px] text-[#66816A]">
+                    <motion.div
+                        initial={{ opacity:1, scale: 0.96 }}
+                        animate={{ opacity:1, scale:1 }}
+                        transition={{ duration:1, delay: 0.2 }}
+                        className="order-1 flex justify-center lg:order-2"
+                    >
+                        <div className="relative flex w-full items-center justify-center border p-5 aspect-4/5 max-w-85 border-bosque/20 sm:max-w-105">
+                            <div className="absolute left-3 top-3 font-mono tracking-widest text-[9px] text-divisor">
                                 PLATE 023
                             </div>
 
                             <div className="flex h-full w-full items-center justify-center bg-[#eae5d34d]">
                                 {/*ilustracion*/}
-                                <span className="font-serif text-7xl italic text-[#315C49]/30">Flora</span>
+                                <span className="font-serif text-7xl italic text-oliva/30">Flora</span>
                             </div>
 
-                            <div className="absolute bottom-3 right-3 font-mono tracking-widest text-[9px] text-[#66816A]">FIG. XXIII</div>
+                            <div className="absolute bottom-3 right-3 font-mono tracking-widest text-[9px] text-divisor">FIG. XXIII</div>
                         </div>
                     </motion.div>
                 </div>
@@ -53,6 +66,7 @@ export default function Cover() {
                     <span>2003 · 2026</span>
                 </footer>
             </section>
+            <BiologicalRecord/>
         </main>
     );
 }
