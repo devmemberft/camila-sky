@@ -13,8 +13,9 @@
   --color-bosque: #183D32;
   --color-oliva: #315C49;
   --color-marfil: #F3EFDF;
-  --color-papel: #fcf7e2;
+  --color-papel: #FCF7E2;
   --color-divisor: #66816A;
+  --color-light: #C4CEB8;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,6 +1,12 @@
 'use client';
 import { motion } from "motion/react";
 
+const knownInfo = [
+    { label:"NOMBRE", value:"Souri"},
+    { label:"EDAD", value:"23 ciclos solares"},
+    { label:"ESTADO", value:"En evolución constante"},
+];
+
 const taxonomy = [
     { label: "Reino", value: "Animalia" },
     { label: "Clase", value: "Singularis" },
@@ -9,6 +15,7 @@ const taxonomy = [
     { label: "Género", value: "Anima" },
     { label: "Especie", value: "Half-human" },
 ];
+
 
 const characteristics = [
     {number:"01", title:"Espíritu explorador", description:"Cuenta con una curiosidad innata por descubrir nuevos lugares, paisajes y formas de vida", tag:"EXPLORACIÓN" },
@@ -66,20 +73,13 @@ export default function BiologicalRecord(){
                         <p className="mt-3 font-mono text-sm text-divisor">(clasificacion simbólica · 2026)</p>
 
                         <div className="mt-9 grid grid-cols-2 gap-3">
-                            <div className="border border-bosque/20 p-4">
-                                <span className="block font-mono tracking-widest text-bosque text-[9px]">NOMBRE COMÚN</span>
-                                <span className="mt-2 block font-serif text-xl">Souri</span>
-                            </div>
+                            {knownInfo.map((item,i)=>(
+                                <div id={item.label} className="border border-bosque/20 p-4">
+                                    <span className="block font-mono tracking-widest text-bosque text-[9px]">{item.label}</span>
+                                    <span className="mt-2 block font-serif text-xl">{item.value}</span>
+                                </div>
+                            ))}
 
-                            <div className="border border-bosque/20 p-4">
-                                <span className="block font-mono tracking-widest text-bosque text-[9px]">EDAD</span>
-                                <span className="mt-2 block font-serif text-xl">23 años</span>
-                            </div>
-
-                            <div className="border border-bosque/20 p-4">
-                                <span className="block font-mono tracking-widest text-bosque text-[9px]">ESTADO DEL ESPÉCIMEN</span>
-                                <span className="mt-2 block font-serif text-xl">En constante evolución</span>
-                            </div>
                         </div>
                     </motion.div>
 
@@ -91,7 +91,73 @@ export default function BiologicalRecord(){
                         transition={{ duration: 0.7, delay: 0.2 }}
                     >
                         <p className="mb-5 font-mono text-divisor tect-[10px] tracking-[0.18em]">B · CLASIFICACIÓN</p>
+
+                        <div className="border-t border-bosque/30">
+                            {taxonomy.map((item,i)=>(
+                                <div 
+                                key={item.label}
+                                className="flex items-center justify-between gap-4 border-b border-bosque/20 py-4">
+                                    <span className="font-mono tracking-widest text-bosque text-[10px]">
+                                        {String(i+1).padStart(3,"0")} · {item.label}
+                                    </span>
+
+                                    <span className="text-right font-serif text-lg italic sm:text-xl">{item.value}</span>
+                                </div>
+                            ))}
+                        </div>
+                        
+                        <div className="mt-6 bg-bosque p-5 text-marfil">
+                            <span className="font mono text-light text-[9px] tracking-[0.2em]">NIVEL DE RAREZA</span>
+
+                            <div className="mt-2 flex items-end justify-between">
+                                <span className="font-serif text-3xl italic">Mítico</span>
+                                <span className="font-mono text-sm text-light">∞ / ∞</span>
+                            </div>
+                        </div>
                     </motion.div>
+                </div>
+
+                {/*caracteristicas*/}
+                <div className="border-t border-divisor/20 pt-9">
+                    <motion.div
+                        initial={{ opacity:0, y:15 }}
+                        whileInView={{ opacity:1, y:0 }}
+                        viewport={{ once:true }}
+                        transition={{ duration: 0.7 }}
+                    >
+                        <p className="mb-3 font-mono text-divisor text-[10px]tracking-[0.18em]">C · CARACTERÍSTICAS OBSERVADAS</p>
+
+                        <h3 className="mb-8 font-serif text-3xl sm:text-4xl">Rasgos distintivos</h3>
+                    </motion.div>
+
+                    <div className="grid gap-0 sm:grid-cols-2 lg:grid-cols-3">
+                        { characteristics.map((item,i)=>(
+                            <motion.article
+                                key={item.number}
+                                initial={{ opacity:0, y:15 }}
+                                whileInView={{ opacity:1, y:0 }}
+                                viewport={{ once:true }}
+                                transition={{ duration: 0.6, delay: i * 0.12 }}
+                                className="border-t border-divisor/20 py-6 sm:px-5 sm:first:pl-0 sm:nth-2:border-l sm:nth-3:border-l"
+                            >
+                                <div className="mb-5 flex items-center justify-between">
+                                    <span className="font-mono text-xs text-divisor">[{item.number}]</span>
+
+                                    <span className="font-mono tracking-widest text-divisor text-[9px]">{item.tag}</span>
+                                </div>
+
+                                <h4 className="mb-3 font-serif text-2xl">{item.title}</h4>
+
+                                <p className="text-sm leading-7 text-oliva">{item.description}</p>
+
+                            </motion.article>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="mt-8 flex flex-col justify-between gap-2 border-t border-divisor/20 pt-5 font-mono tracking-widest text-divisor sm:flex-row text-[9px]">
+                        <span>DEPARTAMENTO DE BIOLOGIA EXTRAORDINARIA</span>
+                        <span>REGISTRO ACTUALIZADO · 2026</span>
                 </div>
                 
             </div>

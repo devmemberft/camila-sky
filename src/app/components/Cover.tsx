@@ -66,7 +66,6 @@ export default function Cover() {
                     <span>2003 · 2026</span>
                 </footer>
             </section>
-            <BiologicalRecord/>
         </main>
     );
 }
