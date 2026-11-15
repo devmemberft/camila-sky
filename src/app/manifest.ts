@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
         id: "/",
         name: "Souri",
         short_name: "souri",
-        description: "",
+        description: "portfolio of a singular creature discovery",
         start_url: "",
         scope: "/",
         display: "standalone",

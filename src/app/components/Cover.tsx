@@ -1,6 +1,6 @@
 'use client';
 import { motion } from "motion/react";
-import BiologicalRecord from "./BiologicalRecord";
+import Image from "next/image";
 
 export default function Cover() {
     return(
@@ -54,7 +54,15 @@ export default function Cover() {
 
                             <div className="flex h-full w-full items-center justify-center bg-[#eae5d34d]">
                                 {/*ilustracion*/}
-                                <span className="font-serif text-7xl italic text-oliva/30">Flora</span>
+                                <Image
+                                    src="/souri.png"
+                                    alt="recreacion botanica de souri"
+                                    width={512}
+                                    height={512}
+                                    className="h-auto w-full object-contain"
+                                    priority
+                                />
+                                {/* <span className="font-serif text-7xl italic text-oliva/30">Flora <img src="@/public/souri.png" alt="" /></span> */}
                             </div>
 
                             <div className="absolute bottom-3 right-3 font-mono tracking-widest text-[9px] text-divisor">FIG. XVI</div>
