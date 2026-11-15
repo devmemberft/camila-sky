@@ -60,7 +60,7 @@ export default function Cover() {
                                     width={512}
                                     height={512}
                                     className="h-auto w-full object-contain"
-                                    loading="lazy"
+                                    loading="eager"
                                 />
                                 {/* <span className="font-serif text-7xl italic text-oliva/30">Flora <img src="@/public/souri.png" alt="" /></span> */}
                             </div>
