@@ -47,9 +47,9 @@ export default function BiologicalRecord(){
 
                     <div className="flex flex-col justify-between gap-4 border-b border-bosque/20 pb-7 sm:flex-row sm:items-end" />
                         <div>
-                            <p className="mb-2 font-mono text-sm text-divisor">ARCHIVO N.° 023 / SECCIÓN A</p>
+                            <p className="mb-2 mt-4 font-mono text-sm text-divisor">ARCHIVO N.° 1199 / SECCIÓN A</p>
 
-                            <h2 className="font-serif text-4xl sm:text-5xl">Ficha de clasificacion</h2>
+                            <h2 className="font-serif text-4xl sm:text-5xl">Ficha de clasificación</h2>
                         </div>
 
                         <span className="font-mono text-[10px] tracking-widest text-divisor">ESPÉCIMEN · 001</span>
@@ -68,15 +68,16 @@ export default function BiologicalRecord(){
 
                         <p className="mb-2 text-sm text-divisor">Denominación científica</p>
 
-                        <h3 className="font-serif text-4xl italic sm:text-5xl">Anima <br />Extraordinaria</h3>
+                        <h3 className="font-serif text-4xl italic sm:text-5xl">Animalia <br />Singularis</h3>
 
-                        <p className="mt-3 font-mono text-sm text-divisor">(clasificacion simbólica · 2026)</p>
+                        <p className="mt-3 font-mono text-sm text-divisor">(clasificacion simbólica · 6202)</p>
 
                         <div className="mt-9 grid grid-cols-2 gap-3">
                             {knownInfo.map((item,i)=>(
-                                <div id={item.label} className="border border-bosque/20 p-4">
+                                <div key={i} id={item.label} className="border border-bosque/20 p-4">
                                     <span className="block font-mono tracking-widest text-bosque text-[9px]">{item.label}</span>
                                     <span className="mt-2 block font-serif text-xl">{item.value}</span>
+                                    
                                 </div>
                             ))}
 
@@ -90,7 +91,7 @@ export default function BiologicalRecord(){
                         viewport={{ once:true }}
                         transition={{ duration: 0.7, delay: 0.2 }}
                     >
-                        <p className="mb-5 font-mono text-divisor tect-[10px] tracking-[0.18em]">B · CLASIFICACIÓN</p>
+                        <p className="mb-5 font-mono text-divisor text-[10px] tracking-[0.18em]">B · CLASIFICACIÓN</p>
 
                         <div className="border-t border-bosque/30">
                             {taxonomy.map((item,i)=>(
@@ -125,7 +126,7 @@ export default function BiologicalRecord(){
                         viewport={{ once:true }}
                         transition={{ duration: 0.7 }}
                     >
-                        <p className="mb-3 font-mono text-divisor text-[10px]tracking-[0.18em]">C · CARACTERÍSTICAS OBSERVADAS</p>
+                        <p className="mb-3 font-mono text-divisor text-[10px] tracking-[0.18em]">C · CARACTERÍSTICAS OBSERVADAS</p>
 
                         <h3 className="mb-8 font-serif text-3xl sm:text-4xl">Rasgos distintivos</h3>
                     </motion.div>
