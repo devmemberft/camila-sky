@@ -55,7 +55,7 @@ export default function Cover() {
                             <div className="flex h-full w-full items-center justify-center bg-[#eae5d34d]">
                                 {/*ilustracion*/}
                                 <Image
-                                    src="/souri.webp"
+                                    src="/souri.png"
                                     alt="recreacion botanica de souri"
                                     width={512}
                                     height={512}
