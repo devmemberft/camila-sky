@@ -16,6 +16,7 @@
   --color-papel: #FCF7E2;
   --color-divisor: #66816A;
   --color-light: #C4CEB8;
+  --color-focus: #52675A;
 }
 
 @media (prefers-color-scheme: dark) {

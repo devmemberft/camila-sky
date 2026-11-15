@@ -19,7 +19,7 @@ const taxonomy = [
 
 const characteristics = [
     {number:"01", title:"Espíritu explorador", description:"Cuenta con una curiosidad innata por descubrir nuevos lugares, paisajes y formas de vida", tag:"EXPLORACIÓN" },
-    {number:"02", title:"Sensibilidad artítica", description:"Manifiesta una especial afinidad por la música, el dibujo y otras expresiones creativas", tag:"CREATIVIDAD" },
+    {number:"02", title:"Sensibilidad artística", description:"Manifiesta una especial afinidad por la música, el dibujo y otras expresiones creativas", tag:"CREATIVIDAD" },
     {number:"04", title:"Danza ilimitada", description:"Su actividad aumenta considerablemente ante la presencia de música. El baile constituye uno de sus comportamientos más característicos.", tag:"MOVIMIENTO" },
 ];
 
