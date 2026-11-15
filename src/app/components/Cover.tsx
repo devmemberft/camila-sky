@@ -22,7 +22,7 @@ export default function Cover() {
                     >
                         <p className="mb-5 font-mono text-xs tracking-[02.em] text-[#66916A]">EXPEDIENTE N. ° 1199</p>
 
-                        <h1 className="max-w-xl font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-widest">· Souri ·</h1>
+                        <h1 className="max-w-xl font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-widest">· Soury ·</h1>
                         <h2 className="black italic lg:text-3xl tracking-widest sm:text-2xl">Una especie singular.</h2>
 
                         <div className="my-7 h-px w-16 bg-divisor"/>
@@ -55,12 +55,12 @@ export default function Cover() {
                             <div className="flex h-full w-full items-center justify-center bg-[#eae5d34d]">
                                 {/*ilustracion*/}
                                 <Image
-                                    src="/souri.png"
+                                    src="/souri.webp"
                                     alt="recreacion botanica de souri"
                                     width={512}
                                     height={512}
                                     className="h-auto w-full object-contain"
-                                    priority
+                                    loading="lazy"
                                 />
                                 {/* <span className="font-serif text-7xl italic text-oliva/30">Flora <img src="@/public/souri.png" alt="" /></span> */}
                             </div>

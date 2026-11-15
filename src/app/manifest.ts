@@ -3,10 +3,10 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
     return{
         id: "/",
-        name: "Souri",
-        short_name: "souri",
+        name: "Soury",
+        short_name: "Soury",
         description: "portfolio of a singular creature discovery",
-        start_url: "",
+        start_url: "/",
         scope: "/",
         display: "standalone",
         orientation: "portrait",

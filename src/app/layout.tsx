@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,8 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Souri",
-  description: "Your birth changed it all",
+  metadataBase: new URL("https://superchicacl.netlify.app"),
+  title: "Soury",
+  description: "You changed it all",
+  applicationName: "Soury",
+  appleWebApp: { capable: true, title: "Soury", statusBarStyle: "black-translucent" },
+  openGraph: {
+    title: "Soury",
+    description: "You changed it all",
+    type: "website",
+  },
+  robots: { index: false, follow: false }, // Google no index
+};
+
+export const viewport: Viewport = {
+  themeColor: "#183D32",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
