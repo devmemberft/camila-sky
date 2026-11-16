@@ -37,7 +37,7 @@ export default function Cover() {
 
                         <p className="mt-5 font-serif text-lg italic">Tu eres un ejemplar excepcional.</p>
 
-                        <button className="mt-9 border px-6 py-4 font-mono transition-colors duration-300 text-[10px] tracking-widest border-bosque hover:bg-bosque hover:text-marfil">EXPLORAR EXPEDIENTE ↓</button>
+                        <button className="cursor-pointer mt-9 border px-6 py-4 font-mono transition-colors duration-300 text-[10px] tracking-widest border-bosque hover:bg-bosque hover:text-marfil">EXPLORAR EXPEDIENTE ↓</button>
                     </motion.div>
 
 
@@ -55,7 +55,7 @@ export default function Cover() {
                             <div className="flex h-full w-full items-center justify-center bg-[#eae5d34d]">
                                 {/*ilustracion*/}
                                 <Image
-                                    src="/souri.png"
+                                    src="/souri.webp"
                                     alt="recreacion botanica de souri"
                                     width={512}
                                     height={512}
