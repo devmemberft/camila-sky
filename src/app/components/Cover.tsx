@@ -20,7 +20,7 @@ export default function Cover() {
                         layout
                         // cambiar el orden en que se muestra la ilustracion: className="order-2 lg:order-1"
                     >
-                        <p className="mb-5 font-mono text-xs tracking-[02.em] text-[#66916A]">EXPEDIENTE N. ° 1199</p>
+                        <p className="mb-5 font-mono text-xs tracking-[02.em] text-[#66916A]">EXPEDIENTE N. ° 1611</p>
 
                         <h1 className="max-w-xl font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-widest">· Soury ·</h1>
                         <h2 className="black italic lg:text-3xl tracking-widest sm:text-2xl">Una especie singular.</h2>

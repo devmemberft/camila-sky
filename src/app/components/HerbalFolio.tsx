@@ -142,8 +142,7 @@ export default function HerbalFolio(){
                 className="mt-12 border-l-2 border-divisor py-2 pl-5"
                 >
                 <p className="font-serif text-xl italic leading-relaxed sm:text-2xl">
-                    Algunas colecciones no se encuentran en la naturaleza.
-                    Se descubren conociendo a las personas.
+                    La combinación de estos registros son la demostración del valor que posees y la vitalidad y fortaleza que reflejas en los que te queremos. 
                 </p>
 
                 <span className="mt-4 block font-mono text-[9px] tracking-widest text-divisor">

@@ -15,7 +15,7 @@ const observations = [
   {
     number: "02",
     category: "RESPUESTA A ESTÍMULOS",
-    title: "El fenómeno de la música",
+    title: "El fenómeno musical",
     description:
       "Se registra un incremento considerable de actividad cuando el espécimen entra en contacto con estímulos musicales. En determinadas circunstancias, resulta imposible permanecer quieta.",
     note:

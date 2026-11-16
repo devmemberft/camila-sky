@@ -2,9 +2,14 @@
 import { motion } from "motion/react";
 
 const knownInfo = [
-    { label:"NOMBRE", value:"Souri"},
+    { label:"NOMBRE", value:"Soury"},
     { label:"EDAD", value:"23 ciclos solares"},
     { label:"ESTADO", value:"En evolución constante"},
+    { label:"HABILIDAD", value:"Transmutación"},
+    { label:"COMPONENTE PRINCIPAL", value:"Curación"},
+    { label:"PODER ESPECIAL", value:"Intuición"},
+    { label:"ACTITUD", value:"Sumamente independiente"},
+    
 ];
 
 const taxonomy = [

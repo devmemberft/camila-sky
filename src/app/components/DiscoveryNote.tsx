@@ -19,7 +19,7 @@ export default function DiscoveryNote() {
           className="mb-12 text-center"
         >
           <p className="font-mono text-[10px] tracking-[0.3em] text-[#B8C5AD]">
-            DOCUMENTO FINAL · ARCHIVO N.º 1199
+            DOCUMENTO FINAL · ARCHIVO N.º 1611
           </p>
 
           <div className="mx-auto my-6 h-px w-16 bg-divisor" />
@@ -97,7 +97,7 @@ export default function DiscoveryNote() {
             </p>
 
             <p className="mt-2 font-mono text-[9px] tracking-wider text-divisor">
-              EXPEDIENTE 1199 · CASO IRREPETIBLE
+              EXPEDIENTE 1611 · CASO IRREPETIBLE
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function DiscoveryNote() {
                 <br />
                 ESPECIAL
                 <br />
-                ★ 1199 ★
+                ★ 1611 ★
               </span>
             </div>
           </div>
